@@ -4,31 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .flex {
+            display: flex;            
+        }
+        .item {
+            width: 80px;
+            height: 80px;
+            background-color: blueviolet;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <hr />
-    <h2>Formulário</h2>
-    <div>
-        <form action="" method="get">
-            <div>
-                <label for="nome">Nome:</label>
-                <br />
-                <input type="text" id="nome" name="nome">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <br />
-                <input type="email" id="email" name="email">
-            </div>
-            <div>
-                <label for="msg">Mensagem:</label>
-                <br />
-                <textarea id="msg" name="mensagem"></textarea>
-            </div>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>        
+    <h2>Flexbox</h2>
+    <div class="flex">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
     </div>
 </body>
 </html>
