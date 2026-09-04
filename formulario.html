@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: blue
+        }
+
         .flex {
             display: flex;            
         }
@@ -16,6 +20,33 @@
             align-items: center;
             justify-content: center;
             color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .item:hover{
+            background-color: red;
+            cursor: progress;
+        }
+
+        .item:nth-child(1):hover,
+        .item:nth-child(3):hover{
+            background-color: green;
+        }
+
+        input:focus{
+            color: red;
+            background-color: yellow;
+        }
+
+        @media (max-width: 450px) {
+            body{
+                background-color: green
+            }
+
+            .flex {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -26,6 +57,11 @@
         <div class="item">a</div>
         <div class="item">b</div>
         <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+    </div>
+    <div>
+        <input />
     </div>
 </body>
 </html>
